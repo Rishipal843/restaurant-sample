@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu & Culinary Selections | White Rock Bistro</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- External CSS Architecture -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/menu.css">
+</head>
+<body>
+
+    <!-- 1. Navigation Bar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- 2. Hero Page Banner -->
+    <header class="menu-hero">
+        <div class="menu-hero-content">
+            <span class="sub-tag">CULINARY EXCELLENCE</span>
+            <h1>Our Signature Menu</h1>
+            <p>Fresh Pacific catches, flame-seared prime meats, and local West Coast harvests.</p>
+        </div>
+    </header>
+
+    <!-- 3. Sticky Category Quick-Nav Filter Bar -->
+    <nav class="category-nav-bar">
+        <div class="category-nav-container">
+            <a href="#featured" class="cat-link active"><i class="fas fa-star"></i> Featured</a>
+            <a href="#starters" class="cat-link"><i class="fas fa-seedling"></i> Starters</a>
+            <a href="#drinks" class="cat-link"><i class="fas fa-cocktail"></i> Drinks</a>
+            <a href="#desserts" class="cat-link"><i class="fas fa-ice-cream"></i> Desserts</a>
+        </div>
+    </nav>
+
+    <!-- 4. FEATURED DISHES SECTION -->
+    <section class="menu-category-section" id="featured">
+        <div class="category-header">
+            <div>
+                <span class="sub-tag">CHEF'S SELECTIONS</span>
+                <h2 class="category-title">Featured Dishes</h2>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn" onclick="slideContainer('featuredTrack', -350)"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn" onclick="slideContainer('featuredTrack', 350)"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider-track" id="featuredTrack">
+                
+                <!-- Card 1 -->
+                <div class="v-menu-card">
+                    <div class="v-wrapper">
+                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80" alt="Pan-Seared Pacific Salmon">
+                        <div class="v-badge">
+                            <i class="fas fa-play-circle"></i> Signature Catch
+                        </div>
+                        <div class="v-caption">
+                            <h3>Pan-Seared Salmon</h3>
+                            <p>Wild BC salmon served over saffron risotto, tender asparagus, and lemon-dill emulsion.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="v-menu-card">
+                    <div class="v-wrapper">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="AAA Prime Ribeye Steak">
+                        <div class="v-badge">
+                            <i class="fas fa-fire"></i> Chef Special
+                        </div>
+                        <div class="v-caption">
+                            <h3>AAA Prime Ribeye</h3>
+                            <p>Flame-seared Alberta beef with garlic butter, roasted potatoes, and rich red wine jus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="v-menu-card">
+                    <div class="v-wrapper">
+                        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80" alt="Seafood Pasta">
+                        <div class="v-badge">
+                            <i class="fas fa-fish"></i> Ocean Harvest
+                        </div>
+                        <div class="v-caption">
+                            <h3>Seafood Linguine</h3>
+                            <p>Jumbo prawns, scallops, and Manila clams tossed in white wine garlic sauce.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. STARTERS SECTION -->
+    <section class="menu-category-section bg-alt" id="starters">
+        <div class="category-header">
+            <div>
+                <span class="sub-tag">TO BEGIN</span>
+                <h2 class="category-title">Fresh Starters</h2>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn" onclick="slideContainer('startersTrack', -350)"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn" onclick="slideContainer('startersTrack', 350)"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider-track" id="startersTrack">
+                
+                <div class="v-menu-card">
+                    <div class="v-wrapper">
+                        <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?auto=format&fit=crop&w=800&q=80" alt="Artisanal Tomato Bruschetta">
+                        <div class="v-badge">
+                            <i class="fas fa-leaf"></i> Fresh Harvest
+                        </div>
+                        <div class="v-caption">
+                            <h3>Artisanal Bruschetta</h3>
+                            <p>Heirloom tomatoes, fresh basil, and aged balsamic glaze on toasted sourdough.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="v-menu-card">
+                    <div class="v-wrapper">
+                        <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=800&q=80" alt="Caesar Salad">
+                        <div class="v-badge">
+                            <i class="fas fa-utensils"></i> Classic Starter
+                        </div>
+                        <div class="v-caption">
+                            <h3>West Coast Caesar</h3>
+                            <p>Crisp romaine hearts, smoked bacon lardons, parmesan, and house lemon dressing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="v-menu-card">
+                    <div class="v-wrapper">
+                        <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80" alt="Steamed Mussels">
+                        <div class="v-badge">
+                            <i class="fas fa-water"></i> Salt Spring Island
+                        </div>
+                        <div class="v-caption">
+                            <h3>Steamed Mussels</h3>
+                            <p>Fresh Island mussels steamed in shallow shallot-white wine broth with crostini.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. DRINKS & COCKTAILS SECTION -->
+    <section class="menu-category-section" id="drinks">
+        <div class="category-header">
+            <div>
+                <span class="sub-tag">BAR & CELLAR</span>
+                <h2 class="category-title">Craft Drinks</h2>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn" onclick="slideContainer('drinksTrack', -350)"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn" onclick="slideContainer('drinksTrack', 350)"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider-track" id="drinksTrack">
+                
+                <div class="v-menu-card">
+                    <div class="v-wrapper">
+                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80" alt="Sunset Berry Cocktail">
+                        <div class="v-badge">
+                            <i class="fas fa-glass-martini-alt"></i> Signature Cocktail
+                        </div>
+                        <div class="v-caption">
+                            <h3>Sunset Berry Spritz</h3>
+                            <p>Local BC craft gin, wild blackberry reduction, prosecco, and sparkling soda.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="v-menu-card">
+                    <div class="v-wrapper">
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80" alt="Red Wine Glass">
+                        <div class="v-badge">
+                            <i class="fas fa-wine-glass-alt"></i> Okanagan Reserve
+                        </div>
+                        <div class="v-caption">
+                            <h3>Okanagan Reserve Red</h3>
+                            <p>Dark cherry notes, cedar spice, and silky tannins from local Mission Hill vineyards.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="v-menu-card">
+                    <div class="v-wrapper">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80" alt="Mint Mojito">
+                        <div class="v-badge">
+                            <i class="fas fa-cocktail"></i> House Classic
+                        </div>
+                        <div class="v-caption">
+                            <h3>Coastal Mint Mojito</h3>
+                            <p>White rum, muddled fresh garden mint, lime juice, cane sugar syrup, and chilled soda water.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. DESSERTS SECTION -->
+    <section class="menu-category-section bg-alt" id="desserts">
+        <div class="category-header">
+            <div>
+                <span class="sub-tag">FINISHING TOUCH</span>
+                <h2 class="category-title">Sweet Confections</h2>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn" onclick="slideContainer('dessertsTrack', -350)"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn" onclick="slideContainer('dessertsTrack', 350)"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider-track" id="dessertsTrack">
+                
+                <div class="v-menu-card">
+                    <div class="v-wrapper">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Molten Chocolate Lava Cake">
+                        <div class="v-badge">
+                            <i class="fas fa-ice-cream"></i> Warm Delight
+                        </div>
+                        <div class="v-caption">
+                            <h3>Molten Lava Cake</h3>
+                            <p>Warm Belgian dark chocolate center served with house-made Madagascar vanilla bean gelato.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="v-menu-card">
+                    <div class="v-wrapper">
+                        <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80" alt="New York Cheesecake">
+                        <div class="v-badge">
+                            <i class="fas fa-birthday-cake"></i> Chef Favorite
+                        </div>
+                        <div class="v-caption">
+                            <h3>New York Cheesecake</h3>
+                            <p>Rich graham crust cheesecake topped with fresh Okanagan berry compote and mint leaf.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating CTA Section -->
+    <section class="cta-banner-section">
+        <div class="cta-card">
+            <h2>Ready for an Unforgettable Dining Experience?</h2>
+            <p>Reserve your table today for exceptional West Coast cuisine, fine wines, and waterfront views.</p>
+            <a href="contact.html#reserve" class="cta-card-btn">Book Table Now</a>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="./js/script.js"></script>
+    <script>
+        function slideContainer(trackId, distance) {
+            const track = document.getElementById(trackId);
+            track.scrollBy({ left: distance, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

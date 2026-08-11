@@ -1,0 +1,372 @@
+/* ==========================================================================
+   White Rock Bistro - Gallery Page Stylesheet (gallery.css)
+   Palette: Deep Royal Navy (#0B192C) & Luxury Gold (#C5A059)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Hero Banner
+   -------------------------------------------------------------------------- */
+.gallery-hero {
+    height: 50vh;
+    min-height: 380px;
+    background: linear-gradient(rgba(36, 36, 36, 0.492), rgba(11, 25, 44, 0.7)), 
+                url('../asset/images/gallery/IMG_6411.JPEG') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    padding-top: 80px;
+    border-bottom: 2px solid rgba(197, 160, 89, 0.25);
+}
+
+.gallery-hero-content {
+    max-width: 780px;
+}
+
+.sub-tag{
+    color: #C5a059;
+}
+
+.gallery-hero h1 {
+    font-family: var(--font-heading);
+    font-size: 3.2rem;
+    color: #FFFFFF;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.gallery-hero p {
+    color: #E2E8F0;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   2. Vertical Videos Section (3 Portrait Videos)
+   -------------------------------------------------------------------------- */
+.video-showcase-section {
+    padding: 100px 8% !important;
+    background-color: var(--bg-alt) !important;
+    border-bottom: 1px solid rgba(11, 25, 44, 0.05);
+}
+
+/* Header Styling & Centering */
+.video-section-header {
+    text-align: center !important;
+    margin-bottom: 60px !important;
+    width: 100% !important;
+}
+
+.video-section-header .sub-tag {
+    color: var(--accent-gold) !important;
+    text-transform: uppercase !important;
+    font-size: 0.85rem !important;
+    letter-spacing: 3px !important;
+    font-weight: 600 !important;
+    margin-bottom: 10px !important;
+    display: block !important;
+}
+
+.video-section-header h2 {
+    font-family: var(--font-heading) !important;
+    font-size: 2.6rem !important;
+    color: var(--text-dark) !important;
+}
+
+/* Grid Layout */
+.vertical-videos-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 35px !important;
+    max-width: 1150px !important;
+    margin: 0 auto !important;
+}
+
+/* Premium Dark-Glass Video Card Styling */
+.v-card {
+    position: relative !important;
+    border-radius: 24px !important;
+    overflow: hidden !important;
+    background: #0B192C !important;
+    border: 1px solid rgba(197, 160, 89, 0.35) !important;
+    box-shadow: 0 15px 35px rgba(11, 25, 44, 0.18) !important;
+    transition: all 0.4s ease !important;
+}
+
+.v-card:hover {
+    transform: translateY(-10px) !important;
+    border-color: var(--accent-gold) !important;
+    box-shadow: 0 20px 45px rgba(11, 25, 44, 0.3) !important;
+}
+
+/* Video Frame Aspect Ratio */
+.v-wrapper {
+    position: relative !important;
+    width: 100% !important;
+    padding-top: 165% !important; /* Vertical Video Aspect 9:16 */
+    overflow: hidden !important;
+}
+
+.v-wrapper video {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transition: transform 0.5s ease !important;
+}
+
+.v-card:hover .v-wrapper video {
+    transform: scale(1.05) !important;
+}
+
+/* Floating Gold Badge */
+.v-badge {
+    position: absolute !important;
+    top: 18px !important;
+    left: 18px !important;
+    background: rgba(11, 25, 44, 0.85) !important;
+    color: var(--accent-gold) !important;
+    padding: 8px 16px !important;
+    border-radius: 30px !important;
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    border: 1px solid rgba(197, 160, 89, 0.4) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    z-index: 5 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Floating Dark Glass Overlay Caption */
+.v-caption {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    padding: 30px 20px 22px !important;
+    background: linear-gradient(to top, rgba(7, 13, 24, 0.95) 0%, rgba(7, 13, 24, 0.7) 70%, rgba(7, 13, 24, 0) 100%) !important;
+    z-index: 4 !important;
+    color: #FFFFFF !important;
+    backdrop-filter: blur(4px) !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+}
+
+.v-caption h3 {
+    font-family: var(--font-heading) !important;
+    font-size: 1.2rem !important;
+    color: #FFFFFF !important;
+    margin-bottom: 6px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.5px !important;
+}
+
+.v-caption p {
+    color: #CBD5E1 !important;
+    font-size: 0.88rem !important;
+    line-height: 1.5 !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. Long Storytelling Image Gallery Section
+   -------------------------------------------------------------------------- */
+.story-gallery-section {
+    padding: 100px 8%;
+    background-color: var(--bg-color);
+}
+
+.story-gallery-section .section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.story-gallery-section .section-title p {
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.story-gallery-section .section-title h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--text-dark);
+}
+
+.story-items-wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+/* Individual Story Row Card */
+.story-card {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(11, 25, 44, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.story-card:hover {
+    transform: translateY(-4px);
+}
+
+/* Alternate Layout for Even Items */
+.story-card.reverse {
+    grid-template-columns: 1fr 1.1fr;
+}
+
+.story-card.reverse .story-image {
+    order: 2;
+}
+
+.story-image {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.story-card:hover .story-image img {
+    transform: scale(1.04);
+}
+
+.story-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.story-step {
+    color: var(--accent-gold);
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.story-content h2 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: var(--text-dark);
+    margin-bottom: 18px;
+    line-height: 1.25;
+}
+
+.story-content p {
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    line-height: 1.65;
+    margin-bottom: 24px;
+}
+
+.story-highlight {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(197, 160, 89, 0.1);
+    padding: 14px 20px;
+    border-radius: 12px;
+    border-left: 3px solid var(--accent-gold);
+}
+
+.story-highlight i {
+    color: var(--accent-gold);
+    font-size: 1.1rem;
+}
+
+.story-highlight span {
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   4. Responsive Breakpoints
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+    .vertical-videos-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 15px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .gallery-hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .video-showcase-section {
+        padding: 70px 5% !important;
+    }
+
+    .video-section-header h2 {
+        font-size: 2.1rem !important;
+    }
+
+    .vertical-videos-grid {
+        grid-template-columns: 1fr !important;
+        max-width: 400px !important;
+        gap: 35px !important;
+    }
+
+    .story-card, 
+    .story-card.reverse {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .story-card.reverse .story-image {
+        order: 1; /* Keeps image on top for mobile */
+    }
+
+    .story-image {
+        height: 320px;
+    }
+
+    .story-content h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-hero h1 {
+        font-size: 2rem;
+    }
+
+    .video-showcase-section,
+    .story-gallery-section {
+        padding: 60px 5% !important;
+    }
+
+    .story-image {
+        height: 250px;
+    }
+}

@@ -1,0 +1,250 @@
+/* ==========================================================================
+   Floating Capsule Navbar - Fully Responsive Stylesheet
+   ========================================================================== */
+
+.navbar-wrapper {
+    position: fixed; /* Fixed keeps it floating gracefully while scrolling */
+    top: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0 24px;
+    transition: all 0.3s ease;
+}
+
+.nav-container {
+    position: relative; /* CRITICAL: Allows absolute positioning of mobile drawer */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(11, 25, 44, 0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    transition: all 0.3s ease;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Fixed Logo Sizing to prevent navbar vertical blowout */
+.logo-img {
+    height: 42px; /* Proportional desktop height */
+    width: auto;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease, height 0.3s ease;
+}
+
+.logo-container:hover .logo-img {
+    transform: scale(1.03);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.nav-link {
+    color: #E2E8F0;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 30px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.nav-link.active, 
+.nav-link:hover {
+    background-color: rgba(197, 160, 89, 0.2);
+    color: var(--accent-gold);
+}
+
+.mobile-book-btn {
+    display: none;
+}
+
+/* Book Table Action Button */
+.btn-book {
+    background-color: var(--accent-gold);
+    color: #0B192C;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(197, 160, 89, 0.25);
+    flex-shrink: 0;
+}
+
+.btn-book:hover {
+    background-color: #B08D46;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(197, 160, 89, 0.4);
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: var(--accent-gold);
+    padding: 8px;
+    transition: transform 0.3s ease;
+}
+
+.hamburger:hover {
+    transform: scale(1.1);
+}
+
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+/* 1. Large Laptops / Desktops (1025px - 1200px) */
+@media (max-width: 1200px) {
+    .nav-link {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+
+    .nav-right {
+        gap: 12px;
+    }
+}
+
+/* 2. Tablets & Small Laptops (Portrait & Landscape: 769px - 1024px) */
+@media (max-width: 1024px) {
+    .navbar-wrapper {
+        padding: 0 16px;
+        top: 15px;
+    }
+
+    .logo-img {
+        height: 38px;
+    }
+
+    .nav-right .btn-book {
+        display: none;
+    }
+
+    .hamburger {
+        display: block; /* Hamburger icon visibility */
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    /* Mobile Slide-Down Menu Drawer */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: rgba(11, 25, 44, 0.98);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        padding: 20px;
+        border-radius: 24px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        align-items: stretch;
+        gap: 8px;
+        border: 1px solid rgba(197, 160, 89, 0.3);
+        z-index: 999; /* Ensures menu layer renders above hero content */
+    }
+
+    .nav-links.active {
+        display: flex !important; /* Forces layout to show when JS toggles class */
+        animation: slideDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .nav-link {
+        width: 100%;
+        color: #E2E8F0;
+        padding: 12px 18px;
+        font-size: 0.95rem;
+        border-radius: 12px;
+    }
+
+    .nav-link.active, 
+    .nav-link:hover {
+        background-color: rgba(197, 160, 89, 0.15);
+        color: var(--accent-gold);
+    }
+
+    .mobile-book-btn {
+        display: block;
+        background-color: var(--accent-gold) !important;
+        color: #0B192C !important;
+        text-align: center;
+        margin-top: 8px;
+        font-weight: 700;
+        border-radius: 30px;
+    }
+
+}
+
+/* 3. Small Mobile Devices (Up to 480px) */
+@media (max-width: 480px) {
+    .navbar-wrapper {
+        padding: 0 12px;
+        top: 12px;
+    }
+
+    .nav-container {
+        padding: 8px 16px;
+        border-radius: 40px;
+    }
+
+    .logo-img {
+        height: 30px; /* Scaled down nicely for small phone screens */
+    }
+
+    .nav-links {
+        top: 58px;
+        left: 12px;
+        right: 12px;
+        padding: 16px;
+    }
+}
+
+/* Smooth Slide Animation for Mobile Menu Dropdown */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,424 @@
+/* ==========================================================================
+   White Rock Bistro - Contact & Reservations Stylesheet (contact.css)
+   Palette: Deep Royal Navy (#0B192C) & Luxury Gold (#C5A059)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Hero Banner
+   -------------------------------------------------------------------------- */
+.contact-hero {
+    height: 50vh;
+    min-height: 380px;
+    background: linear-gradient(rgba(36, 36, 36, 0.492), rgba(11, 25, 44, 0.7)), 
+                url('../asset/images/gallery/IMG_6411.JPEG') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    padding-top: 80px;
+    border-bottom: 2px solid rgba(197, 160, 89, 0.25);
+}
+
+.contact-hero-content {
+    max-width: 780px;
+}
+
+.sub-tag {
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.contact-hero h1 {
+    font-family: var(--font-heading);
+    font-size: 3.2rem;
+    color: #FFFFFF;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.contact-hero p {
+    font-family: var(--font-body);
+    color: #E2E8F0;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   2. Reserve Table Section (Glassmorphic Box)
+   -------------------------------------------------------------------------- */
+.reserve-section-custom {
+    padding: 100px 8%;
+    background: linear-gradient(135deg, #070D18 0%, #0B192C 100%);
+    color: #FFFFFF;
+    position: relative;
+    border-bottom: 1px solid rgba(197, 160, 89, 0.15);
+}
+
+.reservation-wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.reservation-info-side h2 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+    line-height: 1.25;
+}
+
+.reservation-info-side p {
+    font-family: var(--font-body);
+    color: #94A3B8;
+    font-size: 0.98rem;
+    line-height: 1.65;
+    margin-bottom: 30px;
+}
+
+.reserve-perks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.perk-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: #E2E8F0;
+}
+
+.perk-item i {
+    color: var(--accent-gold);
+    font-size: 1.1rem;
+}
+
+/* Glassmorphic Form Card */
+.reservation-form-box {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(197, 160, 89, 0.25);
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.reservation-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group:nth-child(1) {
+    grid-column: 1 / -1; /* Name field spans full width */
+}
+
+.form-group label {
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    color: #CBD5E1;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.form-group input, 
+.form-group select {
+    background-color: rgba(7, 13, 24, 0.6);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    color: #FFFFFF;
+    padding: 14px;
+    border-radius: 12px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.form-group input::placeholder {
+    color: #64748B;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+    outline: none;
+    border-color: var(--accent-gold);
+    background-color: rgba(7, 13, 24, 0.85);
+    box-shadow: 0 0 12px rgba(197, 160, 89, 0.3);
+}
+
+.form-group select option {
+    background-color: #0B192C;
+    color: #FFFFFF;
+}
+
+/* --------------------------------------------------------------------------
+   Custom AM / PM Time Selector Styling
+   -------------------------------------------------------------------------- */
+.time-group {
+    grid-column: span 1;
+}
+
+.time-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.time-input-wrapper input[type="text"] {
+    flex: 1;
+}
+
+/* AM / PM Toggle Pill Container */
+.ampm-toggle {
+    display: flex;
+    background-color: rgba(7, 13, 24, 0.8);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    border-radius: 12px;
+    padding: 3px;
+    height: 48px; /* Matches input height */
+}
+
+.ampm-toggle input[type="radio"] {
+    display: none; /* Hide default radio circles */
+}
+
+.ampm-toggle label {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #94A3B8;
+    padding: 10px 14px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+/* Active State for selected AM or PM */
+.ampm-toggle input[type="radio"]:checked + label {
+    background-color: var(--accent-gold);
+    color: var(--dark-pill);
+    box-shadow: 0 2px 10px rgba(197, 160, 89, 0.3);
+}
+
+.submit-btn {
+    grid-column: 1 / -1;
+    background-color: var(--accent-gold);
+    color: var(--dark-pill);
+    border: none;
+    padding: 16px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+    box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #B08D46;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(197, 160, 89, 0.5);
+}
+
+.success-message {
+    display: none;
+    text-align: center;
+    background-color: rgba(197, 160, 89, 0.15);
+    border: 1px solid var(--accent-gold);
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 20px;
+    color: #F1F5F9;
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   3. Location & Map Section
+   -------------------------------------------------------------------------- */
+.location-section {
+    padding: 100px 8%;
+    background-color: var(--bg-color);
+}
+
+.location-section .section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 40px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.contact-info-card {
+    background: #FFFFFF;
+    padding: 45px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    border: 1px solid rgba(11, 25, 44, 0.05);
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact-icon-box {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(11, 25, 44, 0.05);
+    color: var(--accent-gold);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    border: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+.contact-info-item h4 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+}
+
+.contact-info-item p {
+    font-family: var(--font-body);
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+.contact-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--accent-gold);
+}
+
+/* Detailed Weekly Hours List */
+.hours-list {
+    list-style: none;
+    padding: 0;
+    margin: 6px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hours-list li {
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 260px;
+}
+
+.hours-list li strong {
+    color: var(--accent-gold);
+}
+
+.contact-map-card {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    min-height: 380px;
+    background: #FFFFFF;
+    border: 1px solid rgba(11, 25, 44, 0.05);
+}
+
+.contact-map-card iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+/* --------------------------------------------------------------------------
+   4. Responsive Breakpoints
+   -------------------------------------------------------------------------- */
+@media (max-width: 992px) {
+    .contact-hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .reservation-wrapper,
+    .contact-card-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .reservation-form-box {
+        padding: 30px 20px;
+    }
+
+    .reservation-form {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info-card {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+
+    .reserve-section-custom,
+    .location-section {
+        padding: 60px 5%;
+    }
+
+    .contact-map-card {
+        min-height: 300px;
+    }
+}

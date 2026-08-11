@@ -1,0 +1,260 @@
+/* ==========================================================================
+   White Rock Bistro - About Page Stylesheet (about.css)
+   Palette: Deep Royal Navy (#0B192C) & Luxury Gold (#C5A059)
+   Typography: Synchronized directly with gallery.css
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Hero Banner Section
+   -------------------------------------------------------------------------- */
+.about-hero {
+    height: 50vh;
+    min-height: 380px;
+    background: linear-gradient(rgba(36, 36, 36, 0.492), rgba(11, 25, 44, 0.7)), 
+                url('../asset/images/IMG_6411.JPEG') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    padding-top: 80px;
+    border-bottom: 2px solid rgba(197, 160, 89, 0.25);
+}
+
+.about-hero-content {
+    max-width: 780px;
+}
+
+/* Exact sub-tag matching gallery.css */
+.sub-tag {
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: block;
+}
+
+/* Exact Hero H1 matching gallery.css */
+.about-hero h1 {
+    font-family: var(--font-heading);
+    font-size: 3.2rem;
+    color: #FFFFFF;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Exact Hero Paragraph matching gallery.css */
+.about-hero p {
+    color: #E2E8F0;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   2. Introduction / About Section (Matches Gallery Story Grid Sizes)
+   -------------------------------------------------------------------------- */
+.about-intro-section {
+    padding: 100px 8%;
+    background-color: var(--bg-color);
+}
+
+.intro-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* Dual Vertical Image Grid */
+.intro-images-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.intro-img-card {
+    position: relative;
+    width: 100%;
+    height: 420px; /* Synchronized with .story-image height */
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(11, 25, 44, 0.05);
+}
+
+.intro-img-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.intro-img-card:hover img {
+    transform: scale(1.04);
+}
+
+/* Right Content Box Typography */
+.intro-text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Matches .story-content h2 typography */
+.intro-text-column h2 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: var(--text-dark);
+    margin-bottom: 18px;
+    line-height: 1.25;
+}
+
+/* Lead text style */
+.intro-text-column .lead-text {
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    font-size: 0.98rem;
+    font-weight: 600;
+    line-height: 1.65;
+    margin-bottom: 16px;
+}
+
+/* Body paragraph matches .story-content p typography */
+.intro-text-column .body-text {
+    font-family: var(--font-body);
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    line-height: 1.65;
+    margin-bottom: 24px;
+}
+
+/* Gold CTA Button */
+.gold-cta-btn {
+    font-family: var(--font-body);
+    background-color: var(--accent-gold);
+    color: #0B192C;
+    padding: 14px 36px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(197, 160, 89, 0.25);
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.gold-cta-btn:hover {
+    background-color: #B08D46;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(197, 160, 89, 0.4);
+}
+
+/* --------------------------------------------------------------------------
+   3. Features Banner Section (Matches Section Headers & Card Body Typography)
+   -------------------------------------------------------------------------- */
+.features-banner-section {
+    padding: 100px 8%;
+    background-color: var(--bg-alt);
+    border-top: 1px solid rgba(197, 160, 89, 0.15);
+    border-bottom: 1px solid rgba(197, 160, 89, 0.15);
+}
+
+.features-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.feature-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.feature-icon-box {
+    width: 50px;
+    height: 50px;
+    color: var(--accent-gold);
+    font-size: 2rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Matches video caption heading style (.v-caption h3) */
+.feature-text h3 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Matches video caption body style (.v-caption p) */
+.feature-text p {
+    font-family: var(--font-body);
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------------
+   4. Responsive Breakpoints (Matches Gallery Breakpoint Scale)
+   -------------------------------------------------------------------------- */
+@media (max-width: 992px) {
+    .about-hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .intro-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .features-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .intro-img-card {
+        height: 320px;
+    }
+
+    .intro-text-column h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-intro-section,
+    .features-banner-section {
+        padding: 70px 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+
+    .intro-images-column {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-img-card {
+        height: 250px;
+    }
+
+    .about-intro-section,
+    .features-banner-section {
+        padding: 60px 5%;
+    }
+}

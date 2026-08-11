@@ -1,0 +1,121 @@
+:root {
+    /* Brand Theme Colors derived from White Rock Bistro */
+    --bg-color: #F8F9FA;         /* Clean Light Canvas */
+    --bg-alt: #EEF2F5;           /* Soft Muted Gray-Blue for Alternating Sections */
+    --dark-pill: #0B192C;        /* Deep Royal Navy (Primary Brand Color) */
+    --accent-gold: #C5A059;      /* Luxury Gold Accent (Replaces Orange) */
+    --accent-red: #C5A059;       /* Secondary Gold Accent for Icons/Highlights */
+    --accent-orange: #C5A059;    /* Gold for Buttons & Badges */
+    
+    --text-dark: #0B132B;        /* Dark Navy Text */
+    --text-muted: #5C6B73;       /* Muted Slate Text */
+    --text-main: #FFFFFF;        /* White Text */
+    
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+}
+
+
+
+/* ==========================================================================
+   Floating CTA Card Section (Matches Reference Image)
+   ========================================================================== */
+
+.cta-banner-section {
+    padding: 60px 8%;
+    background-color: var(--bg-color); /* Matches page light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Rounded Dark Floating Box */
+.cta-card {
+    background-color: #0B192C; /* Deep Royal Navy matching reference card background */
+    max-width: 1000px;
+    width: 100%;
+    padding: 60px 40px;
+    border-radius: 24px; /* Soft rounded corners as seen in the image */
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(11, 25, 44, 0.15);
+    border: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+.cta-card h2 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.cta-card p {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: #CBD5E1;
+    margin-bottom: 30px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+/* Center Rounded Gold Pill Button */
+.cta-card-btn {
+    display: inline-block;
+    background-color: var(--accent-gold); /* Luxury Gold Pill */
+    color: #0B192C;
+    padding: 16px 38px;
+    border-radius: 50px; /* Fully rounded pill shape matching the image */
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.cta-card-btn:hover {
+    background-color: #B08D46;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .cta-banner-section {
+        padding: 40px 5%;
+    }
+
+    .cta-card {
+        padding: 40px 20px;
+        border-radius: 16px;
+    }
+
+    .cta-card h2 {
+        font-size: 1.6rem;
+    }
+
+    .cta-card p {
+        font-size: 0.9rem;
+    }
+
+    .cta-card-btn {
+        padding: 14px 28px;
+        font-size: 0.9rem;
+    }
+}

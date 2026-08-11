@@ -3,366 +3,369 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample | Fine Dining Experience</title>
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>White Rock Bistro | Fine Dining & Coastal Cuisine in White Rock, BC</title>
+ 
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <!-- External CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+  
 </head>
 <body>
 
-    <!-- 1. Floating Capsule Navbar -->
-    <header class="navbar-wrapper">
-        <div class="nav-container">
-            <div class="nav-left">
-                <a href="#home" class="logo-container">
-                    <div class="logo-circle">
-                        <i class="fas fa-utensils"></i>
-                    </div>
-                    <span class="logo-text">White Rock Bistro</span>
-                </a>
-            </div>
-
-            <div class="nav-right">
-                <nav class="nav-links" id="navLinks">
-                    <a href="#home" class="nav-link active">Home</a>
-                    <a href="#about" class="nav-link">About</a>
-                    <a href="#menu" class="nav-link">Menu</a>
-                    <a href="#gallery" class="nav-link">Gallery</a>
-                    <a href="#testimonials" class="nav-link">Testimonials</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <a href="#reserve" class="nav-link mobile-book-btn">Book Table</a>
-                </nav>
-                <a href="#reserve" class="btn-book">Book Table</a>
-            </div>
-
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </header>
+    <!-- 1. Navigation Bar (Injected via navbar.html or template engine) -->
+    <div id="navbar-placeholder"></div>
 
     <!-- 2. Home Section (Hero Banner) -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1>FLAVORS OF<br>HERITAGE</h1>
-            <p>Savor an exquisite blend of rich, aromatic spices, handcrafted gravies, and time-honored traditional recipes.</p>
+            <h1>WHITE ROCK<br>BISTRO</h1>
+            <!-- <p>Savor coastal Canadian fine dining featuring fresh Pacific seafood, prime cuts,<br> and time-honored culinary traditions overlooking Semiahmoo Bay.</p> -->
             <div class="hero-buttons">
-                <a href="#reserve" class="hero-btn">Book Table</a>
-                <a href="#menu" class="hero-btn-outline">View the Menu</a>
+                <a href="./contact.html#reserve" class="hero-btn">Book Table</a>
+                <a href="./menu.html" class="hero-btn-outline">View the Menu</a>
             </div>
         </div>
     </section>
 
     <!-- Quick Info / Stats Bar -->
-    <div class="info-bar">
-        <div class="info-item">
-            <i class="fas fa-award"></i>
-            <div>
-                <h4>14+ Years</h4>
-                <p>Culinary Excellence</p>
-            </div>
-        </div>
-        <div class="info-item">
+<div class="info-bar">
+    <div class="info-item">
+        <div class="info-icon">
             <i class="fas fa-utensils"></i>
-            <div>
-                <h4>50+ Dishes</h4>
-                <p>Handcrafted Daily</p>
-            </div>
         </div>
-        <div class="info-item">
-            <i class="fas fa-star"></i>
-            <div>
-                <h4>4.9 Rating</h4>
-                <p>Over 2,500 Reviews</p>
-            </div>
+        <div>
+            <h4>West Coast Dining</h4>
+            <p>Fresh Marine Drive Experience</p>
         </div>
     </div>
-
-    <!-- 3. About Section -->
-    <section class="section-container bg-alt" id="about">
-        <div class="about-grid">
-            <div class="about-content">
-                <p class="sub-tag">Our Heritage</p>
-                <h2>Crafting Unforgettable Culinary Memories</h2>
-                <p>Founded with a passion for excellence, White Rock Bistro brings together traditional culinary arts and modern innovation. Every ingredient is mindfully sourced to ensure unmatched flavor profiles that linger long after the final bite.</p>
-                <p>Our kitchen is a sanctuary where age-old techniques meet contemporary flair, directed by master artisans dedicated to your complete dining satisfaction.</p>
-                <div class="about-stats">
-                    <div class="stat">
-                        <h4>14+</h4>
-                        <p>Years in Business</p>
-                    </div>
-                    <div class="stat">
-                        <h4>3</h4>
-                        <p>Master Chefs</p>
-                    </div>
-                </div>
-                <a href="#reserve" class="hero-btn">Learn More</a>
-            </div>
-            <div class="about-images-grid">
-                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=500&q=80" alt="Food dish">
-                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=500&q=80" alt="Restaurant interior">
-                <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=500&q=80" alt="Gourmet presentation">
-                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=500&q=80" alt="Dining atmosphere">
-            </div>
+    <div class="info-item">
+        <div class="info-icon">
+            <i class="fas fa-fish"></i>
         </div>
-    </section>
+        <div>
+            <h4>Pacific Catches</h4>
+            <p>Fresh & Locally Sourced</p>
+        </div>
+    </div>
+    <div class="info-item">
+        <div class="info-icon">
+            <i class="fas fa-star"></i>
+        </div>
+        <div>
+            <h4>Top Customer Choice</h4>
+            <p>Loved by White Rock Locals</p>
+        </div>
+    </div>
+</div>
 
-    <!-- 4. Menu Section (Featured Dishes & Editorial Bento Grid) -->
+    <!-- About Section -->
+<section class="section-container bg-alt" id="about">
+    <div class="about-grid">
+        <div class="about-content">
+            <span class="sub-tag">Coastal Culinary Heritage</span>
+            <h2>Crafting Memorable Pacific Northwest Experiences</h2>
+            <p>Nestled along the scenic Marine Drive waterfront in White Rock, British Columbia, White Rock Bistro brings together West Coast flair and timeless culinary traditions. Every dish highlights locally harvested Canadian seafood, fresh ingredients, and flame-seared premium cuts.</p>
+            <p>Our kitchen celebrates Canada’s rich natural bounty with mindful sourcing, elegant presentation, and a warm, inviting candlelight atmosphere designed for special occasions and memorable dining experiences.</p>
+            
+            <div class="about-stats">
+                <div class="stat">
+                    <h4>7 Days</h4>
+                    <p>Weekly Dining Experience</p>
+                </div>
+                <div class="stat">
+                    <h4>100%</h4>
+                    <p>Fresh Ingredients</p>
+                </div>
+            </div>
+
+            <a href="./contact.html#reserve" class="cta-book-btn">Reserve Your Table</a>
+        </div>
+
+        <!-- Updated with local asset image paths -->
+        <div class="about-images-grid">
+            <img src="./asset/images/gallery/IMG_6397.JPEG" alt="White Rock Bistro Window View Seating">
+            <img src="./asset/images/gallery/IMG_6240.JPG.jpeg" alt="White Rock Bistro Main Hall and Bar Area">
+            <img src="./asset/images/gallery/IMG_6427.JPEG" alt="White Rock Bistro Candlelight Table Setting">
+            <img src="./asset/images/gallery/IMG_6410.JPEG" alt="White Rock Bistro Dining Room Atmosphere">
+        </div>
+    </div>
+</section>
+
+    <!-- 4. Menu Section -->
     <section class="section-container" id="menu">
         <div class="section-title">
-            <p>Special Selections</p>
-            <h2>Menu & Featured Dishes</h2>
+            <p>Chef's Signature Selections</p>
+            <h2>Featured Menu Highlights</h2>
         </div>
         <div class="uniform-dishes-grid" style="margin-bottom: 60px;">
             <div class="dish-card">
                 <div class="dish-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Truffle Wagyu Steak">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Truffle AAA Beef Tenderloin">
                     <div class="dish-overlay"></div>
-                    <h3 class="dish-title">Truffle Wagyu Steak</h3>
+                    <h3 class="dish-title">Truffle AAA Beef Tenderloin</h3>
                 </div>
             </div>
             <div class="dish-card">
                 <div class="dish-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80" alt="Pan-Seared Salmon">
+                    <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80" alt="Wild BC Pan-Seared Salmon">
                     <div class="dish-overlay"></div>
-                    <h3 class="dish-title">Pan-Seared Salmon</h3>
+                    <h3 class="dish-title">Wild BC Pan-Seared Salmon</h3>
                 </div>
             </div>
             <div class="dish-card">
                 <div class="dish-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80" alt="Lobster Risotto">
+                    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80" alt="Pacific Lobster & Crab Risotto">
                     <div class="dish-overlay"></div>
-                    <h3 class="dish-title">Lobster Risotto</h3>
+                    <h3 class="dish-title">Pacific Lobster & Crab Risotto</h3>
                 </div>
             </div>
         </div>
 
-        <!-- Editorial Bento Section -->
+        <!-- Editorial Bento Showcase Section -->
         <div class="editorial-bento-grid">
             <div class="bento-card green-feature-card">
                 <div class="bento-text-content">
                     <span class="badge-dot"></span>
-                    <h3>Handcrafted Recipes & Tradition</h3>
-                    <p>Every plate tells a unique story of flavor discovery, blending organic ingredients with master-level precision.</p>
-                    <a href="#menu" class="bento-orange-btn">Explore Menu</a>
+                    <h3>Handcrafted Recipes & Oceanfront Dining</h3>
+                    <p>Every plate celebrates local British Columbia ingredients, pairing wild-caught Pacific catches with curated Okanagan Valley wines.</p>
+                    <a href="#menu" class="bento-orange-btn">Explore Full Menu</a>
                 </div>
                 <div class="bento-image-thumbnail">
-                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=500&q=80" alt="Dish creation">
+                    <img src="./asset/images/gallery/IMG_6411.JPEG" alt="White Rock Bistro gourmet plating">
                 </div>
             </div>
 
             <div class="bento-card text-story-card">
-                <div class="card-icon-badge"><i class="fas fa-seedling"></i></div>
-                <h3>Sourced from Local Organic Farms</h3>
-                <p>We work directly with regional cultivators to ensure every herb, vegetable, and spice meets our rigorous criteria.</p>
+                <div class="card-icon-badge"><i class="fas fa-leaf"></i></div>
+                <h3>Sourced from Local Fraser Valley Farms</h3>
+                <p>We collaborate directly with local Canadian growers and fisheries to maintain uncompromising freshness and sustainability.</p>
             </div>
 
             <div class="bento-card medium-recipe-card">
                 <div class="bento-overlay-content">
-                    <h4>Master Tandoor & Grills</h4>
-                    <p>Slow-roasted over open charcoal flames.</p>
+                    <h4>Artisanal Flame Grills</h4>
+                    <p>Prime cuts seared to perfection over oak flames.</p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=500&q=80" alt="Grill preparation">
+                <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=500&q=80" alt="Flame grilled dishes in White Rock BC">
             </div>
 
             <div class="bento-card tall-photo-card">
-                <img src="https://static.vecteezy.com/system/resources/previews/027/810/847/non_2x/realistic-of-ice-cream-close-up-foodgraphy-ai-generated-free-photo.jpg" alt="ice cream bowl">
+                <img src="https://static.vecteezy.com/system/resources/previews/027/810/847/non_2x/realistic-of-ice-cream-close-up-foodgraphy-ai-generated-free-photo.jpg" alt="Artisanal dessert at White Rock Bistro">
             </div>
 
             <div class="bento-card medium-recipe-card">
                 <div class="bento-overlay-content">
-                    <h4>Burger</h4>
-                    <p>hamburger with lettuce and tomato</p>
+                    <h4>Gourmet Bistro Burger</h4>
+                    <p>House-ground Canadian beef on fresh brioche.</p>
                 </div>
-                <img src="https://static.vecteezy.com/system/resources/previews/017/281/942/non_2x/professional-foodgraphy-close-up-of-a-a-hamburger-with-lettuce-and-tomato-on-a-black-backgroun-free-photo.jpg" alt="Burger">
+                <img src="https://static.vecteezy.com/system/resources/previews/017/281/942/non_2x/professional-foodgraphy-close-up-of-a-a-hamburger-with-lettuce-and-tomato-on-a-black-backgroun-free-photo.jpg" alt="Bistro burger close up">
             </div>
 
             <div class="bento-card medium-recipe-card">
                 <div class="bento-overlay-content">
-                    <h4>Artisanal Patisserie</h4>
-                    <p>Confections prepared fresh every morning.</p>
+                    <h4>House Patisserie & Desserts</h4>
+                    <p>Handcrafted daily by our pastry chefs.</p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=500&q=80" alt="Dessert spread">
+                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=500&q=80" alt="Fresh artisan pastry desserts">
             </div>
         </div>
     </section>
 
     <!-- 5. Gallery Section -->
     <section class="section-container bg-alt" id="gallery">
-        <div class="section-title">
-            <p>Visual Tour</p>
-            <h2>Gallery Preview</h2>
+    <div class="section-title">
+        <p class="sub-tag">Visual Tour</p>
+        <h2>White Rock Bistro Atmosphere</h2>
+    </div>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="./asset/images/gallery/IMG_6413.JPEG" alt="White Rock Bistro window seating view">
         </div>
-        <div class="gallery-grid">
-            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=500&q=80" alt="Gallery 1"></div>
-            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=500&q=80" alt="Gallery 2"></div>
-            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80" alt="Gallery 3"></div>
-            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=500&q=80" alt="Gallery 4"></div>
+        <div class="gallery-item">
+            <img src="./asset/images/gallery/IMG_6425.JPEG" alt="Atmospheric candlelight dining setting">
         </div>
-    </section>
+        <div class="gallery-item">
+            <img src="./asset/images/gallery/IMG_6428.JPEG" alt="White Rock Bistro main hall and bar area">
+        </div>
+        <div class="gallery-item">
+            <img src="./asset/images/gallery/IMG_6396.JPEG" alt="Oceanfront dining room atmosphere">
+        </div>
+    </div>
+</section>
 
     <!-- 6. Testimonials Section -->
-    <section class="section-container" id="testimonials">
-        <div class="section-title">
-            <p>Customer Reviews</p>
-            <h2>What Our Guests Say</h2>
-        </div>
-        <div class="testimonials-grid">
+    <!-- 6. Testimonials Marquee Section -->
+<section class="testimonials-marquee-section" id="testimonials">
+    <div class="section-title">
+        <p>Guest Reviews</p>
+        <h2>What Our Visitors Say</h2>
+    </div>
+
+    <!-- Infinite Marquee Wrapper -->
+    <div class="marquee-container">
+        <div class="marquee-track">
+            
+            <!-- FIRST SET OF CARDS -->
             <div class="testimonial-card">
                 <div class="stars">
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                 </div>
-                <p>"An absolute masterpiece of flavors. The atmosphere is warm, and the presentation of every single plate is stellar."</p>
+                <p>"If I could share 1 million stars I would. The best butter chicken I’ve ever tasted, and Pardeep is the most amazing waiter! Highly recommend for amazing prices and high quality food."</p>
                 <div class="customer-info">
-                    <h4>Sophia Martinez</h4>
-                    <span>Food Critic</span>
+                    <h4>Kimberly Burzan</h4>
+                    <span>Google Reviewer</span>
                 </div>
             </div>
+
             <div class="testimonial-card">
                 <div class="stars">
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                 </div>
-                <p>"We celebrated our anniversary here. The attention to detail and immaculate service made our evening unforgettable."</p>
+                <p>"White Rock Bistro is an amazing place with a beautiful ambiance and delicious food. Every dish is fresh, flavorful, and well presented. Perfect spot for family dinners!"</p>
                 <div class="customer-info">
-                    <h4>David & Emily Watson</h4>
-                    <span>Regular Diners</span>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                <p>"Hands down the best fine dining spot in town. Truly exceptional food paired with world-class hospitality."</p>
-                <div class="customer-info">
-                    <h4>Liam O'Connor</h4>
+                    <h4>Lovepreet Singh</h4>
                     <span>Local Guide</span>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- 7. Book Table Section -->
-    <!-- 7. Reserve a Table (Redesigned) -->
-    <section class="section-container reserve-section-custom" id="reserve">
-        <div class="reservation-wrapper">
-            <!-- Left Side: Atmospheric Text & Info -->
-            <div class="reservation-info-side">
-                <span class="sub-tag" style="color: var(--accent-orange);">ONLINE BOOKING</span>
-                <h2>Reserve Your Table Experience</h2>
-                <p>Secure your spot at White Rock Bistro and immerse yourself in an unforgettable atmosphere of rich heritage flavors and exquisite hospitality.</p>
-                
-                <div class="reserve-perks">
-                    <div class="perk-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Instant digital confirmation</span>
-                    </div>
-                    <div class="perk-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Special seating arrangements available</span>
-                    </div>
-                    <div class="perk-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Complimentary welcome beverage</span>
-                    </div>
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Outstanding hospitality with friendly and courteous staff. The atmosphere was calm and elegant with light music and a peaceful vibe—a perfect spot for a romantic candlelight dinner."</p>
+                <div class="customer-info">
+                    <h4>BeAsT AnKhiE</h4>
+                    <span>Local Guide</span>
                 </div>
             </div>
 
-            <!-- Right Side: Redesigned Interactive Form Box -->
-            <div class="reservation-form-box">
-                <form class="reservation-form" id="reservationForm">
-                    <div class="form-group">
-                        <label for="date">Date</label>
-                        <input type="date" id="date" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="time">Time</label>
-                        <input type="time" id="time" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="guests">Guests</label>
-                        <select id="guests" required>
-                            <option value="1">1 Person</option>
-                            <option value="2" selected>2 Persons</option>
-                            <option value="3">3 Persons</option>
-                            <option value="4">4 Persons</option>
-                            <option value="5+">5+ Persons</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" placeholder="Enter your name" required>
-                        <label for="name">Mobile</label>
-                        <input type="text" id="name" placeholder="Enter your Mobile number" required>
-                    </div>
-                    <button type="submit" class="submit-btn">Reserve Table Now</button>
-                </form>
-                <div class="success-message" id="successMessage">
-                    <i class="fas fa-check-circle"></i> Table reserved successfully! We look forward to hosting you.
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"This restaurant offered a truly first-class experience. The food was absolutely delicious, with every bite full of amazing flavor. I would definitely visit again."</p>
+                <div class="customer-info">
+                    <h4>Bindia</h4>
+                    <span>Local Guide</span>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- 8. Contact Section (Redesigned matching clean card design) -->
+            <!-- DUPLICATED SECOND SET FOR INFINITE LOOPING -->
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"If I could share 1 million stars I would. The best butter chicken I’ve ever tasted, and Pardeep is the most amazing waiter! Highly recommend for amazing prices and high quality food."</p>
+                <div class="customer-info">
+                    <h4>Kimberly Burzan</h4>
+                    <span>Google Reviewer</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"White Rock Bistro is an amazing place with a beautiful ambiance and delicious food. Every dish is fresh, flavorful, and well presented. Perfect spot for family dinners!"</p>
+                <div class="customer-info">
+                    <h4>Lovepreet Singh</h4>
+                    <span>Local Guide</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Outstanding hospitality with friendly and courteous staff. The atmosphere was calm and elegant with light music and a peaceful vibe—a perfect spot for a romantic candlelight dinner."</p>
+                <div class="customer-info">
+                    <h4>BeAsT AnKhiE</h4>
+                    <span>Local Guide</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"This restaurant offered a truly first-class experience. The food was absolutely delicious, with every bite full of amazing flavor. I would definitely visit again."</p>
+                <div class="customer-info">
+                    <h4>Bindia</h4>
+                    <span>Local Guide</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+   <!-- 7. Floating CTA Banner Section -->
+<section class="cta-banner-section">
+    <div class="cta-card">
+        <h2>Ready for an Unforgettable Dining Experience?</h2>
+        <p>Reserve your table today for exceptional West Coast cuisine, fine wines, and waterfront views.</p>
+        <a href="c" class="cta-card-btn">Book Table Now</a>
+    </div>
+</section>
+
+    <!-- 8. Contact & Map Section -->
     <section class="section-container" id="contact">
-        <div class="section-title">
-            <p>Get in Touch</p>
-            <h2>Contact Us</h2>
-        </div>
-        <div class="contact-card-wrapper">
-            <div class="contact-info-card">
-                <div class="contact-info-item">
-                    <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
-                    <div>
-                        <h4>Address</h4>
-                        <p>742 Evergreen Terrace, Culinary District, NY 10001</p>
-                    </div>
-                </div>
-                <div class="contact-info-item">
-                    <div class="contact-icon-box"><i class="fas fa-phone-alt"></i></div>
-                    <div>
-                        <h4>Phone</h4>
-                        <p>+1 (555) 234-5678</p>
-                    </div>
-                </div>
-                <div class="contact-info-item">
-                    <div class="contact-icon-box"><i class="fas fa-clock"></i></div>
-                    <div>
-                        <h4>Opening Hours</h4>
-                        <p>Tue - Sun: 5:00 PM – 11:00 PM<br>Monday: Closed</p>
-                    </div>
+    <div class="section-title">
+        <p class="sub-tag">Get in Touch</p>
+        <h2>Contact & Location</h2>
+    </div>
+    <div class="contact-card-wrapper">
+        <div class="contact-info-card">
+            <div class="contact-info-item">
+                <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                    <h4>Location</h4>
+                    <p>15791 Marine Dr, White Rock, BC V4B 1E5, Canada</p>
                 </div>
             </div>
-            <div class="contact-map-card">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596073366!2d-74.25986548301173!3d40.69767006838162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+            <div class="contact-info-item">
+                <div class="contact-icon-box"><i class="fas fa-phone-alt"></i></div>
+                <div>
+                    <h4>Phone</h4>
+                    <p><a href="tel:+16044861004" class="contact-link">+1 604-486-1004</a></p>
+                </div>
+            </div>
+            <div class="contact-info-item">
+                <div class="contact-icon-box"><i class="fas fa-clock"></i></div>
+                <div>
+                    <h4>Hours of Operation</h4>
+                    <ul class="hours-list">
+                        <li><span>Monday:</span> <strong>Closed</strong></li>
+                        <li><span>Tuesday:</span> 11:00 AM – 9:00 PM</li>
+                        <li><span>Wednesday:</span> 11:00 AM – 11:30 PM</li>
+                        <li><span>Thursday:</span> 11:00 AM – 9:00 PM</li>
+                        <li><span>Friday:</span> 11:00 AM – 9:00 PM</li>
+                        <li><span>Saturday:</span> 10:00 AM – 9:00 PM</li>
+                        <li><span>Sunday:</span> 10:00 AM – 9:00 PM</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </section>
+        <div class="contact-map-card">
+            <!-- Embedded Google Map centered on 15791 Marine Dr, White Rock, BC -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2613.676643202996!2d-122.8020948!3d49.022421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485c33842c86191%3A0xb3e56f4d890a3692!2s15791%20Marine%20Dr%2C%20White%20Rock%2C%20BC%20V4B%201E5%2C%20Canada!5e0!3m2!1sen!2sca!4v1710000000000!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="White Rock Bistro location map"></iframe>
+        </div>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <a href="#home" class="logo-container">
-                <div class="logo-circle">
-                    <i class="fas fa-utensils"></i>
-                </div>
-                <span class="logo-text" style="color: #fff;">White Rock Bistro</span>
-            </a>
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#menu">Menu</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#testimonials">Testimonials</a>
-                <a href="#contact">Contact</a>
-                <a href="#reserve">Book Table</a>
-            </div>
-            <p class="copyright">&copy; 2026 White Rock Bistro Restaurant. All rights reserved.</p>
-        </div>
-    </footer>
+    <!-- Footer (Injected via footer.html or template engine) -->
+    <div id="footer-placeholder"></div>
 
     <!-- External JavaScript -->
     <script src="script.js"></script>
