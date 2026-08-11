@@ -11,7 +11,7 @@
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(36, 36, 36, 0.492), rgba(11, 25, 44, 0.7)),
-                url('../asset/images/IMG_6411.JPEG') no-repeat center center/cover;
+                url('../asset/images/IMG_6411.webp') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
